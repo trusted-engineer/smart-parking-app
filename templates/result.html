@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TFM.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1 {font-family: "Raleway", sans-serif}
+    body, html {height: 100%}
+    .bgimg {
+      background-image: url('https://www.w3schools.com/w3images/forestbridge.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    </style>
+</head>
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+<div class="w3-bar w3-black">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button">Home</a>
+  <a href="/" class="w3-bar-item w3-button">Parkings</a>
+  <input type="text" class="w3-bar-item w3-input w3-white w3-hide-small" placeholder="Search parking" style="width:60%">
+  <a href="javascript:void(0)" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
+</div>
+
+<div class="w3-container w3-display-middle">
+    <div class="w3-card-4" style="width:100%">
+        <img src="data:image/jpeg;charset=utf-8;base64,{{data}}" style="width:100%">
+        <div class="w3-container w3-center">
+            <p>Cars: {{num}}</p>
+            <p>Name: {{name}}</p>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
